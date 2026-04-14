@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Shu | Trang giới thiệu cá nhân</title>
+  <meta name="description" content="Trang giới thiệu cá nhân của Shu với phong cách dark mode, glassmorphism, hiệu ứng mượt và âm nhạc nền." />
+  <meta name="keywords" content="Shu, profile, intro page, dark mode, glassmorphism, anime, music, light novel" />
+  <meta name="author" content="Shu" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#06070b" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Khi deploy thật, nhớ thay bằng domain thật -->
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph / Facebook / Discord / Messenger -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:title" content="Shu | Trang giới thiệu cá nhân" />
+  <meta property="og:description" content="Một góc nhỏ dành cho những điều mình thật sự yêu thích." />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:site_name" content="Shu" />
+  <meta property="og:image" content="https://your-domain.com/social-preview.jpg" />
+  <meta property="og:image:alt" content="Ảnh xem trước trang giới thiệu của Shu" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shu | Trang giới thiệu cá nhân" />
+  <meta name="twitter:description" content="Dark mode, glassmorphism, hiệu ứng mượt và âm nhạc nền." />
+  <meta name="twitter:image" content="https://your-domain.com/social-preview.jpg" />
+
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="video-fallback"></div>
+
+  <audio id="bgAudio" loop preload="metadata">
+    <source src="VienPhanMem.com_7504256092592065800.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="video-bg" id="videoBg" aria-hidden="true">
+    <video id="bgVideo" autoplay muted loop playsinline preload="metadata">
+      <source src="7725126719699.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="glow-layer"></div>
+  <div class="video-overlay"></div>
+  <div class="vignette"></div>
+  <div class="noise"></div>
+
+  <div class="enter-screen" id="enterScreen" role="dialog" aria-modal="true" aria-label="Màn hình chào">
+    <button type="button" class="enter-btn" id="enterBtn">Bấm để vào</button>
+  </div>
+
+  <main class="page">
+    <section class="layout" id="layout">
+      <article class="glass profile-card">
+        <div>
+          <div class="top-row">
+            <div class="identity">
+              <div class="avatar-ring">
+                <div class="avatar" aria-label="Shu avatar">
+                  <img data-avatar-img alt="Shu avatar" />
+                </div>
+              </div>
+
+              <div class="identity-content">
+                <h1 class="name">Shu</h1>
+              </div>
+            </div>
+
+            <div class="badge" aria-label="Đang trực tuyến">
+              <i></i>trực tuyến
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="quote">
+              <span class="bio-line">Call me: Shu</span>
+              <span class="bio-line">+ Sở thích: nghe nhạc, light novel, anime, manga</span>
+              <span class="bio-line">+ My waifu: Asuna, Ayaka, Elaina</span>
+              <span class="bio-line">
+                Home:
+                <a href="https://discord.gg/gachaparadise" target="_blank" rel="noreferrer">
+                  https://discord.gg/gachaparadise
+                </a>
+              </span>
+            </div>
+
+            <div class="ticker" aria-hidden="true">
+              <div class="ticker-track">
+                <span>Welcome to my introduction page</span>
+                <span>Welcome to my introduction page</span>
+                <span>Welcome to my introduction page</span>
+                <span>Welcome to my introduction page</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="extra-panel">
+            <div class="extra-title">Những điều mình thích</div>
+
+            <div class="extra-grid">
+              <div class="extra-item">
+                <small>Anime yêu thích</small>
+                <span>Sword Art Online, Your Name, The Tunnel to Summer, the Exit of Goodbyes, Majo no Tabitabi</span>
+              </div>
+
+              <div class="extra-item">
+                <small>Âm nhạc yêu thích</small>
+                <span>Nơi Này Có Anh, Wrong Times, Platform</span>
+              </div>
+
+              <div class="extra-item">
+                <small>Tính cách</small>
+                <span>Hòa đồng, thân thiện, hơi hướng nội</span>
+              </div>
+
+              <div class="extra-item">
+                <small>Light novel yêu thích</small>
+                <span>Sword Art Online, Majo no Tabitabi, Tokidoki Bosotto Roshiago de Dereru Tonari no Ārya-san</span>
+              </div>
+
+              <div class="extra-item">
+                <small>Game</small>
+                <span>Genshin Impact, Honkai: Star Rail, Wuthering Waves, Arknights Endfield, Roblox</span>
+              </div>
+            </div>
+
+            <div class="extra-quote">Một góc nhỏ dành cho những điều mình thật sự yêu thích.</div>
+          </div>
+        </div>
+
+        <div class="social-grid">
+          <a class="social" href="https://www.youtube.com/@IsMeShuu" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.56 9.38.56 9.38.56s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.7V8.3l6.3 3.7-6.3 3.7Z"/></svg>
+            <span>YouTube</span>
+          </a>
+
+          <a class="social" href="https://www.facebook.com/2008dinhdinh" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.42-3.27H13.5V8.42c0-.95.27-1.6 1.63-1.6h1.74V3.9c-.3-.04-1.34-.13-2.54-.13-2.52 0-4.24 1.54-4.24 4.37v2.43H7.25v3.27h2.84V22h3.41Z"/></svg>
+            <span>Facebook</span>
+          </a>
+
+          <a class="social" href="https://www.tiktok.com/@tr_dinhdinh2k8" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.99 3A5.77 5.77 0 0 0 22 8.01v3.09a8.82 8.82 0 0 1-5.01-1.55v6.12A6.67 6.67 0 1 1 10.32 9v3.2a3.47 3.47 0 1 0 3.47 3.47V3h3.2Z"/></svg>
+            <span>TikTok</span>
+          </a>
+
+          <a class="social" href="https://www.instagram.com/2008dinhdinh/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 1.8A4 4 0 0 0 3.8 7.8v8.4a4 4 0 0 0 4 4h8.4a4 4 0 0 0 4-4V7.8a4 4 0 0 0-4-4H7.8Zm8.95 1.35a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </article>
+
+      <aside class="side">
+        <section class="glass panel">
+          <div class="section-kicker">Biography</div>
+
+          <div class="presence-card">
+            <div class="presence-avatar">
+              <img data-avatar-img alt="Shu presence avatar" />
+              <span class="status-dot"></span>
+            </div>
+
+            <div>
+              <div class="presence-name">Shu</div>
+              <div class="presence-text">
+                <span class="presence-line">Call me: Shu</span>
+                <span class="presence-line">+ Interests: music, light novels, anime, manga</span>
+                <span class="presence-line">+ My waifu: Asuna, Ayaka, Elaina</span>
+                <span class="presence-line">
+                  Home:
+                  <a href="https://discord.gg/gachaparadise" target="_blank" rel="noreferrer">
+                    https://discord.gg/gachaparadise
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="glass panel">
+          <div class="section-kicker">Đang phát</div>
+          <div class="music-cover" aria-hidden="true"></div>
+          <div class="music-title">Wrong times</div>
+          <div class="music-meta">
+            <span id="currentTimeLabel">00:00</span>
+            /
+            <span id="durationLabel">00:00</span>
+          </div>
+          <div class="progress" aria-label="Tiến trình phát nhạc">
+            <span id="musicProgress"></span>
+          </div>
+          <div class="music-controls">
+            <button type="button" class="music-toggle" id="musicToggle" aria-label="Bật hoặc tạm dừng nhạc">
+              ⏸ Tạm dừng
+            </button>
+          </div>
+        </section>
+
+        <section class="glass panel">
+          <div class="section-kicker">Liên kết</div>
+
+          <div class="link-list">
+            <a class="mini-link" href="https://discord.gg/gachaparadise" target="_blank" rel="noreferrer">
+              <div>
+                <small>Trang chủ</small>
+                <span>discord.gg/gachaparadise</span>
+              </div>
+              <div class="arrow">↗</div>
+            </a>
+
+            <a class="mini-link" href="https://www.youtube.com/@IsMeShuu" target="_blank" rel="noreferrer">
+              <div>
+                <small>YouTube</small>
+                <span>@IsMeShuu</span>
+              </div>
+              <div class="arrow">↗</div>
+            </a>
+
+            <a class="mini-link" href="https://www.facebook.com/2008dinhdinh" target="_blank" rel="noreferrer">
+              <div>
+                <small>Facebook</small>
+                <span>facebook.com/2008dinhdinh</span>
+              </div>
+              <div class="arrow">↗</div>
+            </a>
+
+            <a class="mini-link" href="https://www.tiktok.com/@tr_dinhdinh2k8" target="_blank" rel="noreferrer">
+              <div>
+                <small>TikTok</small>
+                <span>@tr_dinhdinh2k8</span>
+              </div>
+              <div class="arrow">↗</div>
+            </a>
+
+            <a class="mini-link" href="https://www.instagram.com/2008dinhdinh/" target="_blank" rel="noreferrer">
+              <div>
+                <small>Instagram</small>
+                <span>@2008dinhdinh</span>
+              </div>
+              <div class="arrow">↗</div>
+            </a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
